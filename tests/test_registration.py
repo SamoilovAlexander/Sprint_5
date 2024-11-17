@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from TestLocators import TestLocators
+from test_locators import TestLocators
 from helpers import DataHelper
 from tests.conftest import driver
 
@@ -54,7 +54,7 @@ class TestRegistration:
         driver.find_element(*TestLocators.INPUT_PASSWORD_FOR_REG).send_keys(password)
         driver.find_element(*TestLocators.BUTTON_REG).click()
 
-        element = driver.find_element(By.XPATH, ".//*[@class = 'input__error text_type_main-default']")
+        element = driver.find_element()
 
         assert element is not None
 

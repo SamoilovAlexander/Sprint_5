@@ -1,14 +1,17 @@
 import random
 
+from data import TestData
+
+
 class DataHelper:
     @staticmethod
     def get_name():
-        return "Alexander"
+        return TestData.NAME
 
     @staticmethod
     def get_email():
         number = random.randint(100, 999)
-        return f'Alexander_Samoilov_15_{number}@yandex.ru'
+        return f'alexander_samoilov_15_{number}@yandex.ru'
 
     @staticmethod
     def get_password():

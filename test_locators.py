@@ -28,3 +28,4 @@ class TestLocators:
     SAUCES_IN_LIST = By.XPATH, "//h2[2][text()='Соусы']" #локатор на объекты "Соусы" в общем списке
     UNIT_BUNS = By.XPATH, "//span[text()='Булки']" #локатор на раздел конструктора "Булки"
     BUNS_IN_LIST = By.XPATH, "//h2[1][text()='Булки']" ##локатор на объекты "Булки" в общем списке
+    ERROR_MESSAGE = By.XPATH, ".//*[@class = 'input__error text_type_main-default']" #локатор на сообщение об ошибке "Некорректный пароль"
